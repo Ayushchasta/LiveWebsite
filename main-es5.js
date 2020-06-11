@@ -78,6 +78,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_home_screen_home_screen_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ./components/home-screen/home-screen.component */
     "./src/app/components/home-screen/home-screen.component.ts");
+    /* harmony import */
+
+
+    var _components_book_list_screen_book_list_screen_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./components/book-list-screen/book-list-screen.component */
+    "./src/app/components/book-list-screen/book-list-screen.component.ts");
+    /* harmony import */
+
+
+    var _components_user_list_screen_user_list_screen_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./components/user-list-screen/user-list-screen.component */
+    "./src/app/components/user-list-screen/user-list-screen.component.ts");
 
     var routes = [{
       path: "",
@@ -85,6 +97,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       path: "about",
       component: _components_aboutus_screen_aboutus_screen_component__WEBPACK_IMPORTED_MODULE_2__["AboutusScreenComponent"]
+    }, {
+      path: "users",
+      component: _components_user_list_screen_user_list_screen_component__WEBPACK_IMPORTED_MODULE_5__["UserListScreenComponent"]
+    }, {
+      path: "books",
+      component: _components_book_list_screen_book_list_screen_component__WEBPACK_IMPORTED_MODULE_4__["BookListScreenComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -316,6 +334,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_footer_component_footer_component_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
     /*! ./components/footer-component/footer-component.component */
     "./src/app/components/footer-component/footer-component.component.ts");
+    /* harmony import */
+
+
+    var _components_book_list_screen_book_list_screen_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! ./components/book-list-screen/book-list-screen.component */
+    "./src/app/components/book-list-screen/book-list-screen.component.ts");
+    /* harmony import */
+
+
+    var _components_user_list_screen_user_list_screen_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    /*! ./components/user-list-screen/user-list-screen.component */
+    "./src/app/components/user-list-screen/user-list-screen.component.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -335,7 +365,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _components_navbar_component_navbar_component_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponentComponent"], _components_home_screen_home_screen_component__WEBPACK_IMPORTED_MODULE_8__["HomeScreenComponent"], _components_aboutus_screen_aboutus_screen_component__WEBPACK_IMPORTED_MODULE_9__["AboutusScreenComponent"], _components_footer_component_footer_component_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponentComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _components_navbar_component_navbar_component_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponentComponent"], _components_home_screen_home_screen_component__WEBPACK_IMPORTED_MODULE_8__["HomeScreenComponent"], _components_aboutus_screen_aboutus_screen_component__WEBPACK_IMPORTED_MODULE_9__["AboutusScreenComponent"], _components_footer_component_footer_component_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponentComponent"], _components_book_list_screen_book_list_screen_component__WEBPACK_IMPORTED_MODULE_11__["BookListScreenComponent"], _components_user_list_screen_user_list_screen_component__WEBPACK_IMPORTED_MODULE_12__["UserListScreenComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], ngx_spinner__WEBPACK_IMPORTED_MODULE_3__["NgxSpinnerModule"]]
       });
     })();
@@ -347,7 +377,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"], _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_4__["NgbModule"], ngx_spinner__WEBPACK_IMPORTED_MODULE_3__["NgxSpinnerModule"]],
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _components_navbar_component_navbar_component_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponentComponent"], _components_home_screen_home_screen_component__WEBPACK_IMPORTED_MODULE_8__["HomeScreenComponent"], _components_aboutus_screen_aboutus_screen_component__WEBPACK_IMPORTED_MODULE_9__["AboutusScreenComponent"], _components_footer_component_footer_component_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponentComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _components_navbar_component_navbar_component_component__WEBPACK_IMPORTED_MODULE_7__["NavbarComponentComponent"], _components_home_screen_home_screen_component__WEBPACK_IMPORTED_MODULE_8__["HomeScreenComponent"], _components_aboutus_screen_aboutus_screen_component__WEBPACK_IMPORTED_MODULE_9__["AboutusScreenComponent"], _components_footer_component_footer_component_component__WEBPACK_IMPORTED_MODULE_10__["FooterComponentComponent"], _components_book_list_screen_book_list_screen_component__WEBPACK_IMPORTED_MODULE_11__["BookListScreenComponent"], _components_user_list_screen_user_list_screen_component__WEBPACK_IMPORTED_MODULE_12__["UserListScreenComponent"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         }]
@@ -445,6 +475,105 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           selector: "app-aboutus-screen",
           templateUrl: "./aboutus-screen.component.html",
           styleUrls: ["./aboutus-screen.component.css"]
+        }]
+      }], function () {
+        return [{
+          type: ngx_spinner__WEBPACK_IMPORTED_MODULE_1__["NgxSpinnerService"]
+        }];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/book-list-screen/book-list-screen.component.ts":
+  /*!***************************************************************************!*\
+    !*** ./src/app/components/book-list-screen/book-list-screen.component.ts ***!
+    \***************************************************************************/
+
+  /*! exports provided: BookListScreenComponent */
+
+  /***/
+  function srcAppComponentsBookListScreenBookListScreenComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "BookListScreenComponent", function () {
+      return BookListScreenComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var ngx_spinner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ngx-spinner */
+    "./node_modules/ngx-spinner/__ivy_ngcc__/fesm2015/ngx-spinner.js");
+
+    var BookListScreenComponent =
+    /*#__PURE__*/
+    function () {
+      function BookListScreenComponent(spinner) {
+        _classCallCheck(this, BookListScreenComponent);
+
+        this.spinner = spinner;
+      }
+
+      _createClass(BookListScreenComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this2 = this;
+
+          this.spinner.show();
+          setTimeout(function () {
+            /** spinner ends after 5 seconds */
+            _this2.spinner.hide();
+
+            _this2.spinner.show();
+          }, 800);
+        }
+      }]);
+
+      return BookListScreenComponent;
+    }();
+
+    BookListScreenComponent.ɵfac = function BookListScreenComponent_Factory(t) {
+      return new (t || BookListScreenComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_spinner__WEBPACK_IMPORTED_MODULE_1__["NgxSpinnerService"]));
+    };
+
+    BookListScreenComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: BookListScreenComponent,
+      selectors: [["app-book-list-screen"]],
+      decls: 2,
+      vars: 0,
+      template: function BookListScreenComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "book-list-screen works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYm9vay1saXN0LXNjcmVlbi9ib29rLWxpc3Qtc2NyZWVuLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](BookListScreenComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-book-list-screen',
+          templateUrl: './book-list-screen.component.html',
+          styleUrls: ['./book-list-screen.component.css']
         }]
       }], function () {
         return [{
@@ -591,14 +720,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(HomeScreenComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this3 = this;
 
           this.spinner.show();
           setTimeout(function () {
             /** spinner ends after 5 seconds */
-            _this2.spinner.hide();
+            _this3.spinner.hide();
 
-            _this2.spinner.show();
+            _this3.spinner.show();
           }, 800);
         }
       }]);
@@ -2596,9 +2725,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     NavbarComponentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: NavbarComponentComponent,
       selectors: [["app-navbar-component"]],
-      decls: 18,
-      vars: 4,
-      consts: [[1, "navbar", "navbar-expand-lg", "navbar-dark", "fixed-top", 2, "background-color", "rgba(0, 0, 0, 0.3)"], ["routerLink", "/", 1, "navbar-brand"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], ["routerLinkActive", "active", 1, "nav-item", 3, "routerLinkActiveOptions"], ["routerLink", "/", 1, "nav-link"], ["routerLink", "/about", 1, "nav-link"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"], [2, "min-height", "55px"]],
+      decls: 24,
+      vars: 8,
+      consts: [[1, "navbar", "navbar-expand-lg", "navbar-dark", "fixed-top", 2, "background-color", "rgba(0, 0, 0, 0.3)"], ["routerLink", "/", 1, "navbar-brand"], ["type", "button", "data-toggle", "collapse", "data-target", "#navbarSupportedContent", "aria-controls", "navbarSupportedContent", "aria-expanded", "false", "aria-label", "Toggle navigation", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarSupportedContent", 1, "collapse", "navbar-collapse"], [1, "navbar-nav", "mr-auto"], ["routerLinkActive", "active", 1, "nav-item", 3, "routerLinkActiveOptions"], ["routerLink", "/", 1, "nav-link"], ["routerLink", "/about", 1, "nav-link"], ["routerLink", "/books", 1, "nav-link"], ["routerLink", "/users", 1, "nav-link"], [1, "form-inline", "my-2", "my-lg-0"], ["type", "search", "placeholder", "Search", "aria-label", "Search", 1, "form-control", "mr-sm-2"], ["type", "submit", 1, "btn", "btn-outline-success", "my-2", "my-sm-0"], [2, "min-height", "55px"]],
       template: function NavbarComponentComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav", 0);
@@ -2639,35 +2768,63 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "li", 6);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "form", 9);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "a", 9);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "input", 10);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "button", 11);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, " Search ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Books");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "li", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 10);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Users");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](17, "div", 12);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "form", 11);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "input", 12);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "button", 13);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " Search ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "div", 14);
         }
 
         if (rf & 2) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLinkActiveOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](2, _c0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLinkActiveOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](4, _c0));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLinkActiveOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](3, _c0));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLinkActiveOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](5, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLinkActiveOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](6, _c0));
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("routerLinkActiveOptions", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpureFunction0"](7, _c0));
         }
       },
       directives: [_ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_1__["NgbNavbar"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkActive"]],
@@ -2685,6 +2842,105 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [];
+      }, null);
+    })();
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/user-list-screen/user-list-screen.component.ts":
+  /*!***************************************************************************!*\
+    !*** ./src/app/components/user-list-screen/user-list-screen.component.ts ***!
+    \***************************************************************************/
+
+  /*! exports provided: UserListScreenComponent */
+
+  /***/
+  function srcAppComponentsUserListScreenUserListScreenComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "UserListScreenComponent", function () {
+      return UserListScreenComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var ngx_spinner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ngx-spinner */
+    "./node_modules/ngx-spinner/__ivy_ngcc__/fesm2015/ngx-spinner.js");
+
+    var UserListScreenComponent =
+    /*#__PURE__*/
+    function () {
+      function UserListScreenComponent(spinner) {
+        _classCallCheck(this, UserListScreenComponent);
+
+        this.spinner = spinner;
+      }
+
+      _createClass(UserListScreenComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this4 = this;
+
+          this.spinner.show();
+          setTimeout(function () {
+            /** spinner ends after 5 seconds */
+            _this4.spinner.hide();
+
+            _this4.spinner.show();
+          }, 800);
+        }
+      }]);
+
+      return UserListScreenComponent;
+    }();
+
+    UserListScreenComponent.ɵfac = function UserListScreenComponent_Factory(t) {
+      return new (t || UserListScreenComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](ngx_spinner__WEBPACK_IMPORTED_MODULE_1__["NgxSpinnerService"]));
+    };
+
+    UserListScreenComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: UserListScreenComponent,
+      selectors: [["app-user-list-screen"]],
+      decls: 2,
+      vars: 0,
+      template: function UserListScreenComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "user-list-screen works!");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdXNlci1saXN0LXNjcmVlbi91c2VyLWxpc3Qtc2NyZWVuLmNvbXBvbmVudC5jc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UserListScreenComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-user-list-screen',
+          templateUrl: './user-list-screen.component.html',
+          styleUrls: ['./user-list-screen.component.css']
+        }]
+      }], function () {
+        return [{
+          type: ngx_spinner__WEBPACK_IMPORTED_MODULE_1__["NgxSpinnerService"]
+        }];
       }, null);
     })();
     /***/
